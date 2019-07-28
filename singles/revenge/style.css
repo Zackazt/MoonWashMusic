@@ -4,23 +4,29 @@ html, body {
 }
 body {
   background-color: black;
-  background-image: url("../../assets/Revenge\ Album\ Art\ Blurred.jpg");
-  background-size: cover;
+  background-image: url("./images/Revenge\ Album\ Art\ Blurred.jpg");
+  background-size: 100%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .album-image {
   margin-bottom: 25px;
 }
 .promo-container {
   width: 500px;
+  max-width: 80%;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 .promo-container img {
-  width: 500px;
+  width: 100% !important;
+  height: auto;
   box-shadow: 1px 1px 15px white;
   border-radius: 20px;
+}
+.promo-container iframe {
+  margin-bottom: 40px;
 }
 .platform-container {
   width: 100%;

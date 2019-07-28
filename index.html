@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="Check out Revenge! The brand new hit single from Moon Wash featuring V!BE & Akilus the Cosmonaut." />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@MoonWashMusic">
+    <meta name="twitter:title" content="Moon Wash Music Official">
+    <meta name="twitter:description" content="Hip-Hop, Electronic, Rap, Instrumental, Lo-Fi, Hi-Fi. You name it.">
+    <meta name="twitter:creator" content="@MoonWashMusic">
+    <meta name="twitter:image" content="./assets/MoonWashShare.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Moon Wash Music Official" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://moonwashofficial.com/" />
+    <meta property="og:image" content="./assets/MoonWashShare.jpg" />
+    <meta property="og:description" content="Hip-Hop, Electronic, Rap, Instrumental, Lo-Fi, Hi-Fi. You name it." />
+
+    <title>Moon Wash Music</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/favicon.png" />
+  </head>
+
+  <body>
+
+
+    <img class="arrow fe-pulse-w-pause" src="./assets/arrow.png">
+
+    <div class="main-header-container">
+      <img src="./assets/MoonwashShare.jpg">
+      <h1>Website In Progress</h1>
+      <h3>For Now Follow Me Here:</h3>
+      <div class="social-media">
+        <a href="https://open.spotify.com/artist/799A026K4qx0HNTc6MQkDV?si=OTo7Y64qR82OpbMVTyby0A" target="_blank">
+          <img class="social-media-icon" src="./assets/spotify-icon.png">
+        </a>
+        <a href="https://twitter.com/MoonWashMusic" target="_blank">
+          <img class="social-media-icon" src="./assets/twitter-icon.png">
+        </a>
+        <a href="https://soundcloud.com/moon-wash" target="_blank">
+          <img class="social-media-icon" src="./assets/soundcloud-icon.ico">
+        </a>
+        <a href="https://www.instagram.com/zackazt" target="_blank">
+          <img class="social-media-icon" src="./assets/instagram-icon.png">
+        </a>
+      </div>
+    </div>
+
+    <script>
+
+      const fitFn = () => {
+        const windowHeight = window.innerHeight;
+        const headerContainer = document.getElementsByClassName('main-header-container')[0];
+        headerContainer.style.marginTop = windowHeight + 'px';
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        fitFn();
+        window.onresize = fitFn;
+      });
+      document
+        .getElementsByClassName('arrow')[0]
+        .addEventListener('click', () => window.scrollTo(0, window.innerHeight));
+    </script>
+
+  </body>
+</html>
