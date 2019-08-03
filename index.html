@@ -58,13 +58,11 @@
     </div>
 
     <script>
-
       const fitFn = () => {
         const windowHeight = window.innerHeight;
         const headerContainer = document.getElementsByClassName('main-header-container')[0];
         headerContainer.style.marginTop = windowHeight + 'px';
       }
-
       document.addEventListener('DOMContentLoaded', () => {
         fitFn();
         window.onresize = fitFn;
@@ -73,6 +71,5 @@
         .getElementsByClassName('arrow')[0]
         .addEventListener('click', () => window.scrollTo(0, window.innerHeight));
     </script>
-
   </body>
 </html>
